@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F5FA"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="408dp"
+        android:layout_height="113dp"
+        android:background="#2C91E1"
+        android:text="@string/txtTitulo2"
+        android:textColor="#FAF6F6"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/txtRegistrate"
+        android:textColor="#176CAF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtSlogan"
+        android:textColor="#197DCC"
+        app:layout_constraintStart_toStartOf="@+id/txtRegistrate"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistrate" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtNombre"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlogan" />
+
+    <TextView
+        android:id="@+id/txtApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtApellido"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCorreo"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+
+    <TextView
+        android:id="@+id/txtContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtContra"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtSexo"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtFecha"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexo" />
+
+    <TextView
+        android:id="@+id/txtSlogan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtSlogan2"
+        android:textColor="#15568A"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+    <Button
+        android:id="@+id/btnRegistrate"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/btnRegistrate"
+        app:icon="@android:drawable/ic_menu_send"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlogan2"
+        app:rippleColor="@color/blue" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" Ronald"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNombre"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintTop_toTopOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" Alagon Vicente"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtApellido"
+        app:layout_constraintStart_toEndOf="@+id/txtApellido"
+        app:layout_constraintTop_toTopOf="@+id/txtApellido" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" alagon123@example.com"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCorreo"
+        app:layout_constraintStart_toEndOf="@+id/txtCorreo"
+        app:layout_constraintTop_toTopOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtContra"
+        app:layout_constraintStart_toEndOf="@+id/txtContra"
+        app:layout_constraintTop_toTopOf="@+id/txtContra" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="100dp"
+        android:layout_height="22dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/idContraSlogan"
+        app:layout_constraintTop_toBottomOf="@+id/idContraSlogan" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSexo"
+        app:layout_constraintStart_toEndOf="@+id/txtSexo"
+        app:layout_constraintTop_toTopOf="@+id/txtSexo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <TextView
+        android:id="@+id/idCorreoSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtCorreoSlogan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/idContraSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/txtContraSlogan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/idCorreoSlogan"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="77dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#8ABFEA"
+        android:text="@string/btnEntrar"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" mm/dd/yy"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFecha"
+        app:layout_constraintStart_toEndOf="@+id/txtFecha"
+        app:layout_constraintTop_toTopOf="@+id/txtFecha" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="119dp"
+        android:layout_height="23dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/idCorreoSlogan" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNombre"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toTopOf="@+id/txtNombre"
+        app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtApellido"
+        app:layout_constraintEnd_toStartOf="@+id/txtApellido"
+        app:layout_constraintTop_toTopOf="@+id/txtApellido"
+        app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="21dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCorreo"
+        app:layout_constraintEnd_toStartOf="@+id/txtCorreo"
+        app:layout_constraintTop_toTopOf="@+id/txtCorreo"
+        app:srcCompat="@drawable/baseline_message_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtContra"
+        app:layout_constraintEnd_toStartOf="@+id/txtContra"
+        app:layout_constraintTop_toTopOf="@+id/txtContra"
+        app:srcCompat="@drawable/baseline_password_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSexo"
+        app:layout_constraintEnd_toStartOf="@+id/txtSexo"
+        app:layout_constraintTop_toTopOf="@+id/txtSexo"
+        app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFecha"
+        app:layout_constraintEnd_toStartOf="@+id/txtFecha"
+        app:layout_constraintTop_toTopOf="@+id/txtFecha"
+        app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DAM_UC3_RonaldAlagon</string>
+    <string name="txtTitulo">Facebook</string>
+    <string name="txtRegistrate">Regístrate</string>
+    <string name="txtSlogan">Es gratis (y lo seguirá siendo)</string>
+    <string name="btnRegistrate">Regístrate</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtApellido">Apellidos</string>
+    <string name="txtCorreo">Correo electrónico</string>
+    <string name="txtContra">Contraseña nueva</string>
+    <string name="txtSexo">Sexo</string>
+    <string name="txtFecha">Fecha de nacimiento</string>
+    <string name="txtSlogan2">¿Por qué tengo que dar esta información?</string>
+    <string name="txtCorreoSlogan">Correo Electrónico</string>
+    <string name="txtContraSlogan">Contraseña</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="txtTitulo1">"  Facebook"</string>
+    <string name="txtTitulo2">_ Facebook</string>
+</resources>
